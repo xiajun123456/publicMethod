@@ -1,0 +1,339 @@
+@import "mymixin";
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $base-background-color;
+  color: $base-font-color;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  color: $a-color;
+  font-size: $a-font-size;
+  text-decoration: $a-font-text-decoration;
+}
+
+a:hover {
+  color: $a-hover-color;
+  text-decoration: $a-hover-text-decoration;
+}
+
+img {
+  border: none;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+input, textarea, select, button {
+  font: 14px Verdana, Helvetica, Arial, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.text-overflow-point {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.h-20 {
+  height: 20px;
+}
+
+.h-30 {
+  height: 30px;
+}
+
+.h-40 {
+  height: 40px;
+}
+
+.h-50 {
+  height: 50px;
+}
+
+.h-70 {
+  height: 70px;
+}
+
+.h-100 {
+  height: 100px;
+}
+
+.w-40 {
+  width: 40px;
+}
+
+.w-50 {
+  width: 50px;
+}
+
+.w-60 {
+  width: 60px;
+}
+
+.w-70 {
+  width: 70px;
+}
+
+.w-80 {
+  width: 80px;
+}
+
+.w-90 {
+  width: 90px;
+}
+
+.w-100 {
+  width: 100px;
+}
+
+.w-120 {
+  width: 120px;
+}
+
+.w-150 {
+  width: 150px;
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.w-300 {
+  width: 300px;
+}
+
+.p-3 {
+  padding: 3px;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.p-7 {
+  padding: 7px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.p-l-5 {
+  padding-left: 5px;
+}
+
+.p-l-10 {
+  padding-left: 10px;
+}
+
+.p-l-20 {
+  padding-left: 20px;
+}
+
+.p-r-5 {
+  padding-right: 5px;
+}
+
+.p-r-10 {
+  padding-right: 10px;
+}
+
+.p-r-20 {
+  padding-right: 20px;
+}
+
+.p-t-5 {
+  padding-top: 5px;
+}
+
+.p-t-10 {
+  padding-top: 10px;
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
+.p-b-5 {
+  padding-bottom: 5px;
+}
+
+.p-b-10 {
+  padding-bottom: 10px;
+}
+
+.p-b-20 {
+  padding-bottom: 20px;
+}
+
+.p-l-r-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.p-l-r-20 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.p-t-b-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.p-t-b-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.m-3 {
+  margin: 3px;
+}
+
+.m-5 {
+  margin: 5px;
+}
+
+.m-7 {
+  margin: 7px;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.m-l-5 {
+  margin-left: 5px;
+}
+
+.m-l-10 {
+  margin-left: 10px;
+}
+
+.m-l-20 {
+  margin-left: 20px;
+}
+
+.m-r-5 {
+  margin-right: 5px;
+}
+
+.m-r-10 {
+  margin-right: 10px;
+}
+
+.m-r-20 {
+  margin-right: 20px;
+}
+
+.m-t-5 {
+  margin-top: 5px;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+
+.m-b-5 {
+  margin-bottom: 5px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-l-r-10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.m-l-r-20 {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.m-t-b-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.m-t-b-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
